@@ -32,7 +32,9 @@ public class Player : MonoBehaviour
         move();
         pointing();
 
-        
+        //we will check for attacking here
+        //use getbuttondown(look it up if you don't know it) and use the keyword:Fire1
+        //call Attack
     }
     #endregion
 
@@ -51,6 +53,15 @@ public class Player : MonoBehaviour
         //based on x and y input decide how the player should move through their velocity
         // you may want to normilize the vector you make
 
+    }
+    #endregion
+
+    #region Attackfuncs
+    private void Attack()
+    {
+        //you need to make a bullet before you make attack ideally
+        //set the bulets velocity
+        //look up instantaite
     }
     #endregion
 }

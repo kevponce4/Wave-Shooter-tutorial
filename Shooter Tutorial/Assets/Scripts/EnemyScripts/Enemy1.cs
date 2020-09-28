@@ -125,7 +125,8 @@ public class Enemy1 : MonoBehaviour
 
     private void Attack()
     {
-        //When attacking we can increase our timer, We will also use something called a coroutine for animations and so we don't attack every frame;
+        //When attacking we can increase our timer, We will also use something called a coroutine for animations and so we don't attack every frame
+        //Ignore the coroutine for now and simply have the player take damage
 
     }
     #endregion
