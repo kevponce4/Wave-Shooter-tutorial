@@ -15,6 +15,17 @@ public class Player : MonoBehaviour
     private float y_input;
     #endregion
 
+    #region Heath_vars
+
+    //add a max health variable and a current health variabel
+    //should probably be floats
+    #endregion
+
+    #region Attack_vars
+    //message kevin for how to use bullets
+    // needs a float for how often we can shoot
+    #endregion
+
     #region Unity_vars
     Rigidbody2D PlayerRB;
 
@@ -62,6 +73,14 @@ public class Player : MonoBehaviour
         //you need to make a bullet before you make attack ideally
         //set the bulets velocity
         //look up instantaite
+    }
+    #endregion
+
+    #region Helth_funcs
+    public void TakeDamage(int dmg)
+    {
+        //called on by enemie to take damage
+        //modify the health var you added
     }
     #endregion
 }

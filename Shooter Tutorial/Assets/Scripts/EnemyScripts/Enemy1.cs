@@ -13,6 +13,12 @@ public class Enemy1 : MonoBehaviour
     private Player player;
     #endregion
 
+    #region Heath_vars
+
+    //add a max health variable and a current health variabel
+    //should probably be floats
+    #endregion
+
     #region attack_vars
     // something to hold our enemies damage
 
@@ -140,6 +146,14 @@ public class Enemy1 : MonoBehaviour
             path = P;
             currWaypoint = 0;
         }
+    }
+    #endregion
+
+    #region Helth_funcs
+    public void TakeDamage(int dmg)
+    {
+        //called on by enemie to take damage
+        //modify the health var you added
     }
     #endregion
 }
