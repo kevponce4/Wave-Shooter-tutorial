@@ -22,18 +22,18 @@ public class Enemy1 : MonoBehaviour
     #region attack_vars
     // something to hold our enemies damage
 
-    // an attack timer
+    // an attack timer: should be floats since time in unity can get down to fractoins of a second
 
-    //expected attack delay var/.
+    //expected attack delay var/. should also be a float to allow variable interactions between the timer and delay
 
 
     #endregion
 
     #region Movment_var
-    // speed of the enemy
+    // speed of the enemy should be a float since numbers in velocity should be floats
 
     Vector2 direction;
-
+    // ignore this
     public float nextWaypointDistance = 5f;
     Path path;
     int currWaypoint;
@@ -48,7 +48,7 @@ public class Enemy1 : MonoBehaviour
     {
         // We need to get our RigidBody and seeker Components
         enemyRB = GetComponent<Rigidbody2D>();
-        //set our max helath
+        //set our max health
         
     }
     private void Start()
