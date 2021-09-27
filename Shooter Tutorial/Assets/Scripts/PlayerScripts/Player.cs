@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Unity_vars
-    Rigidbody2D PlayerRB; https://docs.unity3d.com/ScriptReference/Rigidbody.html
+    Rigidbody2D PlayerRB; //https://docs.unity3d.com/ScriptReference/Rigidbody.html
 
     #endregion
 
