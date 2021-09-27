@@ -9,7 +9,7 @@ public class Enemy1 : MonoBehaviour
     [SerializeField]
     [Tooltip("Speed of enemy")]
     private float move_speed;
-    private Rigidbody2D enemyRB;
+    private Rigidbody2D enemyRB; //https://docs.unity3d.com/ScriptReference/Rigidbody.html
     private Player player;
     #endregion
 
@@ -49,6 +49,7 @@ public class Enemy1 : MonoBehaviour
         // We need to get our RigidBody and seeker Components
         enemyRB = GetComponent<Rigidbody2D>();
         //set our max health
+        
         
     }
     private void Start()
@@ -113,6 +114,7 @@ public class Enemy1 : MonoBehaviour
 
         direction = ((Vector2)path.vectorPath[currWaypoint] - enemyRB.position).normalized;
         // use direction to influence the enemies velocity
+        //https://docs.unity3d.com/ScriptReference/Rigidbody-velocity.html look at this if you are having trouble
 
 
         float distance = Vector2.Distance(enemyRB.position, path.vectorPath[currWaypoint]);
@@ -133,6 +135,8 @@ public class Enemy1 : MonoBehaviour
     {
         //When attacking we can increase our timer, We will also use something called a coroutine for animations and so we don't attack every frame
         //Ignore the coroutine for now and simply have the player take damage
+        // look at collision enter 2d https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionEnter2D.html
+        // or collision stay 2d https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnCollisionStay2D.html
 
     }
     #endregion

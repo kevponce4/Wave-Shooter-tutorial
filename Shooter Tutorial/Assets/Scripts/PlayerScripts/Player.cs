@@ -27,12 +27,13 @@ public class Player : MonoBehaviour
     #region Attack_vars
     //https://docs.unity3d.com/Manual/Prefabs.html
     //
-    //message kevin for how to use bullets
+    //message kevin for how to use bullets if you are unsure where to start
+    // probably need to use a prefab copy here
     //needs a float for how often we can shoot
     #endregion
 
     #region Unity_vars
-    Rigidbody2D PlayerRB;
+    Rigidbody2D PlayerRB; https://docs.unity3d.com/ScriptReference/Rigidbody.html
 
     #endregion
 
